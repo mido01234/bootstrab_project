@@ -44,7 +44,8 @@
                 <div class="divv  d-flex justify-content-end">
                     <form class="d-flex ">
                         <input class=" form-control me-1" type="search" placeholder="Search">
-                        <button class=" btn w-50 mx-1" style="background-color: lightgreen;">Sign up</button>
+                        <button class=" btn w-50 mx-1" style="background-color: lightgreen;" data-bs-toggle="modal"
+                            data-bs-target="#myModal1">Sign up</button>
                         <button class=" btn  mx-1" style="background-color: lightgreen;" data-bs-toggle="modal"
                             data-bs-target="#myModal">Login</button>
                     </form>
@@ -80,7 +81,7 @@
                             <label class="form-label text-warning">Email</label>
                             <input type="email" class="form-control text-warning border-3 border-warning rounded-3"
                                 aria-describedby="emailHelp">
-                            
+
                         </div>
                         <div class="m-3">
                             <label class="form-label text-warning">Password</label>
@@ -90,7 +91,46 @@
                     <!-- /form -->
                     <div class="modal-footer d-flex  justify-content-between">
                         <button type="submit" class="btn btn-success text-light">Login</button>
-                        <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary text-light"
+                            data-bs-dismiss="modal">Close</button>
+                    </div> <!-- /model-footer -->
+                </div> <!-- /model-body -->
+            </div> <!-- /modal-content -->
+        </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
+
+    <div class="modal fade" id="myModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning ">
+                    <h5 class="modal-title  font-weight-bolder" id="staticBackdropLabel">Sign up</h5>
+                    <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form>
+                        <div class="m-3">
+                            <label class="form-label text-warning">Name</label>
+                            <input type="email" class="form-control text-warning border-3 border-warning rounded-3"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="m-3">
+                            <label class="form-label text-warning">Email</label>
+                            <input type="email" class="form-control text-warning border-3 border-warning rounded-3"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="m-3">
+                            <label class="form-label text-warning">Password</label>
+                            <input type="password" class="form-control text-warning border-3 border-warning rounded-3">
+                        </div>
+                    </form>
+                    <!-- /form -->
+                    <div class="modal-footer d-flex  justify-content-between">
+                        <button type="submit" class="btn btn-success text-light">Sign up</button>
+                        <button type="button" class="btn btn-secondary text-light"
+                            data-bs-dismiss="modal">Close</button>
                     </div> <!-- /model-footer -->
                 </div> <!-- /model-body -->
             </div> <!-- /modal-content -->
@@ -235,7 +275,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Meet Shawerma</h5>
                     <p class="card-text">Best Shawerma in Egypt</p>
-                    <button class="btn btn-primary text-light mx-auto mb-2" >Know More</button>
+                    <button class="btn btn-primary text-light mx-auto mb-2">Know More</button>
                 </div>
             </div>
             <div class="card1  bg-light text-primary col-lg-3 col-md-4 col-sm-6 m-2  shadow">
@@ -287,7 +327,8 @@
     <hr class="my-4">
     <section class="container light"> <!-- postcards news -->
         <div class="container py-2">
-            <div class="h1 text-center mb-3 title bg-warning" id="pageHeaderTitle" style="font-size: 33px;">Special Offers</div>
+            <div class="h1 text-center mb-3 title bg-warning" id="pageHeaderTitle" style="font-size: 33px;">Special
+                Offers</div>
 
             <article class="postcard d-flex light dark"> <!-- 1st card -->
                 <a class="postcard__img_link" href="#">
